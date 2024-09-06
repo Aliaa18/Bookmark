@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Bookmark</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+         
+        <main class="w-100 p-3 ">
+             <section class="container py-5">
+                  
+                   <h1 class="position-relative text-center">
+                    Bookmarker</h1>
+                   <div class=" content  mx-auto p-3 py-4 mt-5">
+                      <h2 class="mb-5 text-center">
+                        <i class="fa-solid fa-bookmark"></i>
+                        Bookmark your favorite sites 
+                        <i class="fa-solid fa-bookmark"></i>
+                     </h2>
+            <div class="inputs mb-4 d-flex flex-column justify-content-center">
+                <label for="SiteName">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                     Site Name </label>
+                <input type="text" id="SiteName" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div class="inputs mb-4 ">
+                <label for="SiteUrl">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site Url</label>
+                <input type="text" id="SiteUrl" class="form-control" placeholder="Website URL">
+            </div>
+            <div class="text-center">
+        <button class="btn px-5 btn-submit " id="submitbut" onclick="addSite()">Submit</button>
+                   </div></div>
+                   <table class="table mt-4 text-center">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableData"></tbody>
+                        </table>
+             </section>
+          
+        </main>
+
+
+
+
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>

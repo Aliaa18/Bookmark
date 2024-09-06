@@ -1,0 +1,78 @@
+main{
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+main h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    isolation: isolate;
+    position: relative;
+}
+main h1::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    left: 40%;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+  main h1:hover::before {
+    height: 50%;
+  }  
+main h2{
+   font-family: 'Righteous', cursive;
+   font-size: 25px;
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   font-weight: 500;
+      margin-bottom: 10px;
+
+}
+main .inputs{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+}
+section .content{
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+
+}
+
+section .btn-submit{
+    background-color:#d1512d ;
+    color: white;
+}
+.btn-submit:hover{
+    background-color:rgb(118, 38, 18);
+    color: white;
+}
+
+table{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size:16px ;
+    font-weight: 700;
+}
+    
+
+
+.btn-del{
+
+    background-color: rgb(199, 52, 76);
+    color: white;
+}
+
+.btn-vis{
+    background-color: RGB(138, 158, 35);
+    color: white;
+}
+
+.btn-vis:hover{
+    background-color: RGB(138, 158, 35);
+    color: white;
+}
