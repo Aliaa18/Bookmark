@@ -32,16 +32,19 @@
                 <label for="SiteName">
                     <i class="fa-solid fa-book-bookmark pe-2"></i>
                      Site Name </label>
-                <input type="text" id="SiteName" class="form-control" placeholder="Bookmark Name">
+                <input oninput="nameValidation()" type="text" id="SiteName" class="form-control" placeholder="Bookmark Name">
+                <div class="alert alert-danger d-none my-2" id="nameWarn">name is not valid!</div>
+
             </div>
             <div class="inputs mb-4 ">
                 <label for="SiteUrl">
                     <i class="fa-solid fa-link pe-2"></i>
                     Site Url</label>
-                <input type="text" id="SiteUrl" class="form-control" placeholder="Website URL">
+                <input oninput="urlValidation()" type="text" id="SiteUrl" class="form-control" placeholder="Website URL">
+                <div class="alert alert-danger d-none my-2" id="warn">url is not valid!</div>
             </div>
             <div class="text-center">
-        <button class="btn px-5 btn-submit " id="submitbut" onclick="addSite()">Submit</button>
+        <button class="btn px-5 btn-submit " id="submitbut" onclick="repeated()">Submit</button>
                    </div></div>
                    <table class="table mt-4 text-center">
                     <thead>
@@ -52,7 +55,9 @@
                             <th>Delete</th>
                         </tr>
                     </thead>
-                    <tbody id="tableData"></tbody>
+                    <tbody id="tableData">
+
+                    </tbody>
                         </table>
              </section>
           
